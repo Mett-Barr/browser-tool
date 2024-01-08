@@ -24,6 +24,10 @@
                 }
             }
         });
+
+        document.getElementById('image-display').addEventListener('dragstart', (event) => {
+            event.dataTransfer.setData('text/plain', event.target.src);
+        });
     </script>
 </body>
 </html>
